@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Professional | FixAm Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <i class="fa-solid fa-screwdriver-wrench brand-icon"></i>
+
+        <span>
+          <strong>FixAm Lagos</strong>
+          <small class="d-block">
+            Find Trusted Professionals Across Lagos.
+          </small>
+        </span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="find.html">Find a Professional</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">Community</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link" id="logoutButton">
+              <i class="fa-solid fa-right-from-bracket me-1"></i>
+              Logout
+            </a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 ms-lg-3 mt-3 mt-lg-0">
+          <a class="nav-icon" href="dashboard-client.html">
+            <i class="fa-solid fa-bell"></i>
+          </a>
+
+          <a class="btn btn-outline-light btn-sm px-3" href="login.html">
+            Login
+          </a>
+
+          <a class="btn btn-primary btn-sm px-3" href="register-pro.html">
+            Register
+          </a>
+ 
+          <button id="themeToggle" class="nav-icon border-0 bg-transparent" type="button">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-50 py-5">
+
+          <div class="col-lg-8 py-5">
+            <h1 class="display-5 fw-bold">
+              Lagos’s Most Trusted Platform
+              for Skilled Professionals
+            </h1>
+
+            <p class="lead text-light">
+              Book trusted experts. Fast. Safe. Reliable.
+            </p>
+
+            <form action="find.html" class="search-box row g-0 mt-4">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+
+                  <input
+                    type="search"
+                    name="q"
+                    class="form-control"
+                    placeholder="Type a profession or skill...">
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <select name="area" class="form-select">
+                  <option>All Lagos LGAs</option>
+                  <option>Lekki</option>
+                  <option>Ikeja</option>
+                  <option>Yaba</option>
+                  <option>Surulere</option>
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <button class="btn btn-primary w-100 h-100" type="submit">
+                  Search
+                </button>
+              </div>
+            </form>
+
+            <div class="d-flex flex-wrap gap-2 mt-3">
+              <a href="find.html" class="btn btn-primary">
+                <i class="fa-solid fa-user me-2"></i>
+                I Need a Professional
+              </a>
+
+              <a href="register-pro.html" class="btn btn-outline-light">
+                <i class="fa-solid fa-screwdriver-wrench me-2"></i>
+                I Am a Professional
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="glass-card p-4">
+              <i class="fa-solid fa-shield-halved shield-icon"></i>
+
+              <h2 class="h5">Why FixAm Lagos?</h2>
+
+              <ul class="list-unstyled mb-0">
+                <li><i class="fa-solid fa-circle-check"></i> Verified Professionals</li>
+                <li><i class="fa-solid fa-circle-check"></i> Real Reviews</li>
+                <li><i class="fa-solid fa-circle-check"></i> Fast Booking</li>
+                <li><i class="fa-solid fa-circle-check"></i> All Lagos Covered</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="container position-relative statistics-section">
+      <div class="row g-0 stats-box">
+
+        <div class="col-6 col-lg-3">
+          <div class="stat-item">
+            <i class="fa-solid fa-users"></i>
+            <div>
+              <strong>30+</strong>
+              <small>Trusted Professionals</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="stat-item">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <div>
+              <strong>98%</strong>
+              <small>Satisfaction Rate</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="stat-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>20</strong>
+              <small>LGAs Covered</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="stat-item">
+            <i class="fa-solid fa-briefcase"></i>
+            <div>
+              <strong>56K+</strong>
+              <small>Jobs Completed</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<section id="services" class="container py-5">
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="h4 mb-0">Popular Services in Lagos</h2>
+
+    <a href="find.html" class="text-info">
+      View All
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+  <div class="row g-3">
+
+    <div class="col-6 col-md-4 col-lg">
+  <a href="mechanics.html" class="service-card">
+    <i class="fa-solid fa-car"></i>
+    <span>Mechanic</span>
+  </a>
+</div>
+
+<div class="col-6 col-md-4 col-lg">
+  <a href="carpenters.html" class="service-card">
+    <i class="fa-solid fa-hammer"></i>
+    <span>Carpenter</span>
+  </a>
+</div>
+
+<div class="col-6 col-md-4 col-lg">
+  <a href="painter.html" class="service-card">
+    <i class="fa-solid fa-paint-roller"></i>
+    <span>Painter</span>
+  </a>
+</div>
+
+<div class="col-6 col-md-4 col-lg">
+  <a href="drycleaner.html" class="service-card">
+    <i class="fa-solid fa-shirt"></i>
+    <span>Dry Cleaner</span>
+  </a>
+</div>
+
+<div class="col-6 col-md-4 col-lg">
+  <a href="cooks.html" class="service-card">
+    <i class="fa-solid fa-utensils"></i>
+    <span>Cook</span>
+  </a>
+</div>
+
+<div class="col-6 col-md-4 col-lg">
+  <a href="find.html" class="service-card">
+    <i class="fa-solid fa-faucet-drip"></i>
+    <span>Plumber</span>
+  </a>
+</div>
+
+<div class="col-6 col-md-4 col-lg">
+  <a href="find.html" class="service-card">
+    <i class="fa-solid fa-bolt"></i>
+    <span>Electrician</span>
+  </a>
+</div>
+
+  </div>
+
+</section>
+
+<section class="container py-3">
+  <div class="row g-4">
+
+    
+    <div class="col-lg-5">
+      <h2 class="h5 mb-4">How It Works</h2>
+
+      <div class="how-it-works">
+
+        <div class="work-step">
+          <div class="step-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <h6>1. Search</h6>
+          <small>Find the right<br>professional</small>
+        </div>
+
+        <div class="work-step">
+          <div class="step-icon">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+
+          <h6>2. Connect</h6>
+          <small>Chat & confirm<br>details</small>
+        </div>
+
+        <div class="work-step">
+          <div class="step-icon">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+
+          <h6>3. Book</h6>
+          <small>Schedule the<br>job</small>
+        </div>
+
+        <div class="work-step">
+          <div class="step-icon">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+
+          <h6>4. Get It Done</h6>
+          <small>Quality work,<br>hassle-free</small>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

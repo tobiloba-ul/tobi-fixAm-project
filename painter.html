@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painter | FixAm Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+  <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="fa-solid fa-screwdriver-wrench me-2"></i>
+        FixAm Lagos
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="find.html">
+              Find Professional
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="postjob.html">
+              Post a Job
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="booking.html">
+              Bookings
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">
+              Community
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <button
+              class="btn nav-icon"
+              id="themeToggle"
+              type="button"
+              title="Toggle Theme">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <a
+              href="login.html"
+              class="btn btn-primary">
+              Login
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main class="container py-5" style="margin-top: 80px;">
+
+    <div class="text-center mb-5">
+
+      <h1 class="fw-bold">
+        Painters
+      </h1>
+
+      <p class="text-secondary">
+        Find trusted painters for your home and business.
+      </p>
+
+    </div>
+
+
+    <div class="glass-card p-4 mb-5 painter-search-card">
+
+      <div class="row g-3">
+
+        <div class="col-md-8">
+
+          <label
+            for="painterSearch"
+            class="form-label fw-semibold">
+            Search Painters
+          </label>
+
+          <div class="input-group">
+
+            <span class="input-group-text">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+
+            <input
+              type="text"
+              class="form-control"
+              id="painterSearch"
+              placeholder="Search by name or painting service...">
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <label
+            for="painterLocation"
+            class="form-label fw-semibold">
+            Location
+          </label>
+
+          <select
+            class="form-select"
+            id="painterLocation">
+
+            <option value="">
+              All Locations
+            </option>
+
+            <option value="Ikeja">
+              Ikeja
+            </option>
+
+            <option value="Lekki">
+              Lekki
+            </option>
+
+            <option value="Yaba">
+              Yaba
+            </option>
+
+            <option value="Surulere">
+              Surulere
+            </option>
+
+            <option value="Victoria Island">
+              Victoria Island
+            </option>
+
+            <option value="Ajah">
+              Ajah
+            </option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="row g-4" id="paintersList">
+
+      <div class="col-md-6 col-lg-4 painter-item">
+
+        <div class="glass-card p-4 h-100 painter-card">
+
+          <div class="painter-icon mb-3">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+
+          <h4 class="fw-bold">
+            Tunde Paint Works
+          </h4>
+
+          <p class="text-secondary mb-2">
+            Interior & Exterior Painting
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Ikeja, Lagos
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-star text-warning me-2"></i>
+            4.9 Rating
+          </p>
+
+          <p class="text-secondary">
+            <i class="fa-solid fa-briefcase me-2"></i>
+            8 Years Experience
+          </p>
+
+          <div class="d-flex gap-2 mt-3">
+
+            <a
+              href="profile.html"
+              class="btn btn-outline-light painter-btn">
+              View Profile
+            </a>
+
+            <a
+              href="booking.html"
+              class="btn btn-primary painter-btn">
+              Book Service
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-6 col-lg-4 painter-item">
+
+        <div class="glass-card p-4 h-100 painter-card">
+
+          <div class="painter-icon mb-3">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+
+          <h4 class="fw-bold">
+            Chinedu Painting Services
+          </h4>
+
+          <p class="text-secondary mb-2">
+            House Painting & Decoration
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Lekki, Lagos
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-star text-warning me-2"></i>
+            4.7 Rating
+          </p>
+
+          <p class="text-secondary">
+            <i class="fa-solid fa-briefcase me-2"></i>
+            7 Years Experience
+          </p>
+
+          <div class="d-flex gap-2 mt-3">
+
+            <a
+              href="profile.html"
+              class="btn btn-outline-light painter-btn">
+              View Profile
+            </a>
+
+            <a
+              href="booking.html"
+              class="btn btn-primary painter-btn">
+              Book Service
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-6 col-lg-4 painter-item">
+
+        <div class="glass-card p-4 h-100 painter-card">
+
+          <div class="painter-icon mb-3">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+
+          <h4 class="fw-bold">
+            Emeka Colour Hub
+          </h4>
+
+          <p class="text-secondary mb-2">
+            Interior Painting Specialist
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Yaba, Lagos
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-star text-warning me-2"></i>
+            4.8 Rating
+          </p>
+
+          <p class="text-secondary">
+            <i class="fa-solid fa-briefcase me-2"></i>
+            6 Years Experience
+          </p>
+
+          <div class="d-flex gap-2 mt-3">
+
+            <a
+              href="profile.html"
+              class="btn btn-outline-light painter-btn">
+              View Profile
+            </a>
+
+            <a
+              href="booking.html"
+              class="btn btn-primary painter-btn">
+              Book Service
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="col-md-6 col-lg-4 painter-item">
+
+        <div class="glass-card p-4 h-100 painter-card">
+
+          <div class="painter-icon mb-3">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+
+          <h4 class="fw-bold">
+            Adewale Painting Works
+          </h4>
+
+          <p class="text-secondary mb-2">
+            Residential & Commercial Painting
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Surulere, Lagos
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-star text-warning me-2"></i>
+            4.8 Rating
+          </p>
+
+          <p class="text-secondary">
+            <i class="fa-solid fa-briefcase me-2"></i>
+            9 Years Experience
+          </p>
+
+          <div class="d-flex gap-2 mt-3">
+
+            <a
+              href="profile.html"
+              class="btn btn-outline-light painter-btn">
+              View Profile
+            </a>
+
+            <a
+              href="booking.html"
+              class="btn btn-primary painter-btn">
+              Book Service
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      
+
+      <div class="col-md-6 col-lg-4 painter-item">
+
+        <div class="glass-card p-4 h-100 painter-card">
+
+          <div class="painter-icon mb-3">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+
+          <h4 class="fw-bold">
+            Femi Decor Painters
+          </h4>
+
+          <p class="text-secondary mb-2">
+            Wall Painting & Decoration
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Victoria Island, Lagos
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-star text-warning me-2"></i>
+            4.6 Rating
+          </p>
+
+          <p class="text-secondary">
+            <i class="fa-solid fa-briefcase me-2"></i>
+            5 Years Experience
+          </p>
+
+          <div class="d-flex gap-2 mt-3">
+
+            <a
+              href="profile.html"
+              class="btn btn-outline-light painter-btn">
+              View Profile
+            </a>
+
+            <a
+              href="booking.html"
+              class="btn btn-primary painter-btn">
+              Book Service
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="col-md-6 col-lg-4 painter-item">
+
+        <div class="glass-card p-4 h-100 painter-card">
+
+          <div class="painter-icon mb-3">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+
+          <h4 class="fw-bold">
+            Kunle Paint Masters
+          </h4>
+
+          <p class="text-secondary mb-2">
+            House Painting & Finishing
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Ajah, Lagos
+          </p>
+
+          <p class="mb-2">
+            <i class="fa-solid fa-star text-warning me-2"></i>
+            4.7 Rating
+          </p>
+
+          <p class="text-secondary">
+            <i class="fa-solid fa-briefcase me-2"></i>
+            6 Years Experience
+          </p>
+
+          <div class="d-flex gap-2 mt-3">
+
+            <a
+              href="profile.html"
+              class="btn btn-outline-light painter-btn">
+              View Profile
+            </a>
+
+            <a
+              href="booking.html"
+              class="btn btn-primary painter-btn">
+              Book Service
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div
+      id="painterNoResults"
+      class="glass-card p-4 text-center mt-4"
+      style="display: none;">
+
+      <i class="fa-solid fa-face-frown fa-2x mb-3"></i>
+
+      <h5>
+        No painters found
+      </h5>
+
+      <p class="text-secondary mb-0">
+        Try another name, service, or location.
+      </p>
+
+    </div>
+
+  </main>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

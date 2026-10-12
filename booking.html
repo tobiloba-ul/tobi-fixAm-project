@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ooking & Appointments | FixAm Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+
+  <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+
+        <i class="fa-solid fa-screwdriver-wrench me-2"></i>
+        FixAm Lagos
+      </a>
+
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="find.html">
+              Find a Professional
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">
+              Community
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+
+            <button
+              type="button"
+              class="btn btn-outline-light nav-icon"
+              id="themeToggle"
+              title="Toggle theme">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main
+    class="container"
+    style="margin-top: 110px; margin-bottom: 60px;">
+
+    <div class="text-center mb-5">
+
+      <h1 class="fw-bold">
+        Booking & Appointments
+      </h1>
+
+      <p class="text-secondary">
+        Schedule a service with a trusted professional.
+      </p>
+
+    </div>
+
+
+
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+
+        <div class="glass-card p-4 p-md-5 booking-card">
+
+          <h4 class="mb-4">
+
+            <i class="fa-solid fa-calendar-check text-info me-2"></i>
+
+            Book a Service
+
+          </h4>
+
+
+          <form id="bookingForm">
+
+            <div class="mb-4">
+
+              <label
+                for="bookingProfessional"
+                class="form-label fw-bold">
+                Select Professional
+              </label>
+
+              <select
+                class="form-select"
+                id="bookingProfessional"
+                required>
+
+                <option value="" selected disabled>
+                  Select a professional
+                </option>
+
+                <option value="Adewale Plumbing Services">
+                  Adewale Plumbing Services
+                </option>
+
+                <option value="Chinedu Electrical Works">
+                  Chinedu Electrical Works
+                </option>
+
+                <option value="Emeka Carpentry Services">
+                  Emeka Carpentry Services
+                </option>
+
+                <option value="Tunde Painting Services">
+                  Tunde Painting Services
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="bookingService"
+                class="form-label fw-bold">
+                Service Type
+              </label>
+
+              <select
+                class="form-select"
+                id="bookingService"
+                required>
+
+                <option value="" selected disabled>
+                  Select a service
+                </option>
+
+                <option value="Plumbing">
+                  Plumbing
+                </option>
+
+                <option value="Electrical">
+                  Electrical
+                </option>
+
+                <option value="Carpentry">
+                  Carpentry
+                </option>
+
+                <option value="Painting">
+                  Painting
+                </option>
+
+                <option value="Mechanics">
+                  Mechanics
+                </option>
+
+                <option value="Dry Cleaning">
+                  Dry Cleaning
+                </option>
+
+                <option value="Catering">
+                  Cooks / Caterers
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="row g-3 mb-4">
+
+              <div class="col-md-6">
+
+                <label
+                  for="bookingDate"
+                  class="form-label fw-bold">
+                  Appointment Date
+                </label>
+
+                <input
+                  type="date"
+                  class="form-control"
+                  id="bookingDate"
+                  required>
+
+              </div>
+
+
+              <div class="col-md-6">
+
+                <label
+                  for="bookingTime"
+                  class="form-label fw-bold">
+                  Appointment Time
+                </label>
+
+                <input
+                  type="time"
+                  class="form-control"
+                  id="bookingTime"
+                  required>
+
+              </div>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="bookingLocation"
+                class="form-label fw-bold">
+                Service Location
+              </label>
+
+              <select
+                class="form-select"
+                id="bookingLocation"
+                required>
+
+                <option value="" selected disabled>
+                  Select location
+                </option>
+
+                <option value="Ikeja">
+                  Ikeja
+                </option>
+
+                <option value="Lekki">
+                  Lekki
+                </option>
+
+                <option value="Yaba">
+                  Yaba
+                </option>
+
+                <option value="Victoria Island">
+                  Victoria Island
+                </option>
+
+                <option value="Surulere">
+                  Surulere
+                </option>
+
+                <option value="Ajah">
+                  Ajah
+                </option>
+
+                <option value="Lagos Island">
+                  Lagos Island
+                </option>
+
+              </select>
+
+            </div>
+
+
+
+            <div class="mb-4">
+
+              <label
+                for="bookingAddress"
+                class="form-label fw-bold">
+                Full Address
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="bookingAddress"
+                placeholder="Enter the service address"
+                required>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="bookingDetails"
+                class="form-label fw-bold">
+                Job Details
+              </label>
+
+              <textarea
+                class="form-control"
+                id="bookingDetails"
+                rows="5"
+                placeholder="Describe what you need the professional to do..."
+                required></textarea>
+
+            </div>
+
+            <div class="mb-4">
+
+              <label
+                for="bookingBudget"
+                class="form-label fw-bold">
+                Estimated Budget (₦)
+              </label>
+
+              <input
+                type="number"
+                class="form-control"
+                id="bookingBudget"
+                placeholder="e.g. 30000"
+                min="0"
+                required>
+
+            </div>
+
+
+            <div class="form-check mb-4">
+
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="bookingAgreement"
+                required>
+
+              <label
+                class="form-check-label text-secondary"
+                for="bookingAgreement">
+                I confirm that the booking information is correct.
+              </label>
+
+            </div>
+
+
+            <div class="d-grid">
+
+              <button
+                type="submit"
+                class="btn btn-primary booking-btn">
+
+                <i class="fa-solid fa-calendar-plus me-2"></i>
+
+                Confirm Booking
+
+              </button>
+
+            </div>
+
+
+          </form>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-lg-4">
+
+        <div class="glass-card p-4 booking-info-card mb-4">
+
+          <h5 class="mb-4">
+
+            <i class="fa-solid fa-circle-info text-info me-2"></i>
+
+            Booking Information
+
+          </h5>
+
+
+          <div class="d-flex align-items-start mb-4">
+
+            <i class="fa-solid fa-user-check text-info mt-1"></i>
+
+            <div class="ms-3">
+
+              <strong>
+                Choose a Professional
+              </strong>
+
+              <p class="text-secondary mb-0">
+                Select the professional you want to work with.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="d-flex align-items-start mb-4">
+
+            <i class="fa-solid fa-calendar text-info mt-1"></i>
+
+            <div class="ms-3">
+
+              <strong>
+                Select a Date
+              </strong>
+
+              <p class="text-secondary mb-0">
+                Choose a convenient date and time.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="d-flex align-items-start">
+
+            <i class="fa-solid fa-location-dot text-info mt-1"></i>
+
+            <div class="ms-3">
+
+              <strong>
+                Provide Location
+              </strong>
+
+              <p class="text-secondary mb-0">
+                Tell the professional where the service is needed.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="glass-card p-4 booking-info-card">
+
+          <div class="text-center">
+
+            <i class="fa-solid fa-shield-halved fa-2x text-info mb-3"></i>
+
+            <h5>
+              Stay Safe
+            </h5>
+
+            <p class="text-secondary">
+              Always confirm the professional's details
+              before allowing work to begin.
+            </p>
+
+            <a
+              href="safety.html"
+              class="btn btn-outline-light btn-sm">
+              View Safety Tips
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="glass-card p-4 p-md-5 mt-4 booking-history-card">
+
+      <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h4 class="mb-0">
+
+          <i class="fa-solid fa-clock-rotate-left text-info me-2"></i>
+
+          Recent Appointments
+
+        </h4>
+
+        <span class="text-secondary">
+          Your bookings
+        </span>
+
+      </div>
+
+
+      <div class="booking-appointment p-3 mb-3">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+          <div>
+
+            <h6 class="fw-bold mb-1">
+              Kitchen Sink Repair
+            </h6>
+
+            <small class="text-secondary">
+              Adewale Plumbing Services
+            </small>
+
+            <br>
+
+            <small class="text-secondary">
+              <i class="fa-solid fa-calendar me-1"></i>
+              15 September 2026
+            </small>
+
+          </div>
+
+          <span class="badge bg-info text-dark">
+            Confirmed
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="booking-appointment p-3">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+          <div>
+
+            <h6 class="fw-bold mb-1">
+              Electrical Repair
+            </h6>
+
+            <small class="text-secondary">
+              Chinedu Electrical Works
+            </small>
+
+            <br>
+
+            <small class="text-secondary">
+              <i class="fa-solid fa-calendar me-1"></i>
+              20 September 2026
+            </small>
+
+          </div>
+
+          <span class="badge bg-warning text-dark">
+            Pending
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

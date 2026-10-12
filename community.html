@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | FixAm Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+
+        <i class="fa-solid fa-screwdriver-wrench brand-icon"></i>
+
+        <span>
+          <strong>FixAm Lagos</strong>
+          <small class="d-block">
+            Find Trusted Professionals Across Lagos.
+          </small>
+        </span>
+
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="find.html">
+              Find a Professional
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#services">
+              Services
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="community.html">
+              Community
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 ms-lg-3 mt-3 mt-lg-0">
+
+          <a class="nav-icon" href="dashboard-client.html">
+            <i class="fa-solid fa-bell"></i>
+          </a>
+
+          <a class="btn btn-outline-light btn-sm px-3" href="login.html">
+            Login
+          </a>
+
+          <a class="btn btn-primary btn-sm px-3" href="register-pro.html">
+            Register
+          </a>
+
+          <button
+            id="themeToggle"
+            class="nav-icon border-0 bg-transparent"
+            type="button">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="container py-5" style="margin-top: 80px;">
+
+    <div class="text-center mb-5">
+
+      <h1 class="fw-bold">
+        FixAm Lagos Community
+      </h1>
+
+      <p class="text-secondary">
+        Connect, share experiences and learn from other users.
+      </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+      <div class="col-lg-8">
+
+        <div class="glass-card p-4 mb-4 community-post">
+
+    
+          <h5 class="mb-3">
+            <i class="fa-solid fa-pen-to-square me-2"></i>
+            Share with the Community
+          </h5>
+
+    
+          <input
+          type="text"
+          id="postName"
+          class="form-control mb-3"
+          placeholder="Enter your full name"
+          required>
+
+
+    
+          <textarea
+          id="postText"
+          class="form-control mb-3"
+          rows="4"
+          placeholder="Share your experience or ask a question..."
+          required></textarea>
+
+    
+    
+          <div class="mb-3">
+    
+            <label for="postImage" class="form-label">
+    
+              <i class="fa-solid fa-image me-2"></i>
+              Add a picture
+          </label>
+
+        
+        
+          <input
+          type="file"
+          id="postImage"
+          class="form-control"
+          accept="image/*">
+    
+          </div>
+
+    
+   
+          <button
+   
+          id="postButton"
+   
+          type="button"
+   
+          class="btn btn-primary">
+
+          <i class="fa-solid fa-paper-plane me-2"></i>
+          Post
+        </button>
+     
+      </div>
+
+
+            <div class="community-posts"></div>
+
+
+            <div class="glass-card p-4 mb-4 community-post">
+
+              <div class="d-flex align-items-center mb-3">
+
+            <div
+              class="rounded-circle d-flex justify-content-center align-items-center"
+              style="width: 50px; height: 50px; background: var(--cyan);">
+              <img src="images/plumber.avif" alt="Amina Yusuf" class="community-profile-image">
+            </div>
+
+            <div class="ms-3">
+
+              <h6 class="mb-0">
+                Amina Yusuf
+              </h6>
+
+              <small class="text-secondary">
+                2 hours ago
+              </small>
+
+            </div>
+
+          </div>
+
+          <h5>
+            Great plumber recommendation!
+          </h5>
+
+          <p class="text-secondary">
+            I recently needed a plumber around Lekki and found a very
+            reliable professional through FixAm Lagos. The service was
+            quick and affordable.
+          </p>
+
+          <div class="d-flex gap-3">
+
+            <button class="btn btn-sm btn-outline-light like-btn">
+              <i class="fa-regular fa-thumbs-up me-1"></i>
+              Like
+             <span class="like-count">0</span>
+            </button>
+
+            <button class="btn btn-sm btn-outline-light comment-btn">
+              <i class="fa-regular fa-comment me-1"></i>
+              Comment
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="glass-card p-4 mb-4  community-post">
+
+          <div class="d-flex align-items-center mb-3">
+
+            <div
+              class="rounded-circle d-flex justify-content-center align-items-center"
+              style="width: 50px; height: 50px; background: var(--cyan);">
+               <img src="images/Electrician.avif" alt="David Okafor" class="community-profile-image">
+            </div>
+
+            <div class="ms-3">
+
+              <h6 class="mb-0">
+                David Okafor
+              </h6>
+
+              <small class="text-secondary">
+                5 hours ago
+              </small>
+
+            </div>
+
+          </div>
+
+          <h5>
+            How do I find an electrician?
+          </h5>
+
+          <p class="text-secondary">
+            Does anyone know a trusted electrician around Ikeja?
+            I need help with an electrical issue at home.
+          </p>
+
+          <div class="d-flex gap-3">
+
+            <button class="btn btn-sm btn-outline-light like-btn">
+                <i class="fa-regular fa-thumbs-up me-1"></i>
+                Like
+                <span class="like-count">0</span>
+            </button>
+
+            <button class="btn btn-sm btn-outline-light comment-btn">
+              <i class="fa-regular fa-comment me-1"></i>
+              Comment
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="glass-card p-4 mb-4  community-post">
+
+          <div class="d-flex align-items-center mb-3">
+
+            <div
+              class="rounded-circle d-flex justify-content-center align-items-center"
+              style="width: 50px; height: 50px; background: var(--cyan);">
+              <!-- <i class="fa-solid fa-user text-dark"></i> -->
+               <img src="images/Carpenter.avif" alt="Chika Emmanuel" class="community-profile-image">
+            </div>
+
+            <div class="ms-3">
+
+              <h6 class="mb-0">
+                Chika Emmanuel
+              </h6>
+
+              <small class="text-secondary">
+                Yesterday
+              </small>
+
+            </div>
+
+          </div>
+
+          <h5>
+            FixAm Lagos is really helpful
+          </h5>
+
+          <p class="text-secondary">
+            I like how easy it is to search for different professionals
+            based on their service and location.
+          </p>
+
+          <div class="d-flex gap-3">
+
+            <button class="btn btn-sm btn-outline-light like-btn">
+
+              <i class="fa-regular fa-thumbs-up me-1"></i>
+              Like
+               <span class="like-count">0</span>
+            </button>
+
+            <button class="btn btn-sm btn-outline-light comment-btn">
+              <i class="fa-regular fa-comment me-1"></i>
+              Comment
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-4">
+
+        <div class="glass-card p-4 mb-4  community-post">
+
+          <h5 class="mb-3">
+            <i class="fa-solid fa-users me-2"></i>
+            About the Community
+          </h5>
+
+          <p class="text-secondary">
+            The FixAm Lagos community allows users to share experiences,
+            ask questions and recommend trusted professionals.
+          </p>
+
+        </div>
+
+        <div class="glass-card p-4 mb-4  community-post">
+
+          <h5 class="mb-3">
+            Community Stats
+          </h5>
+
+          <div class="d-flex justify-content-between mb-3">
+
+            <span class="text-secondary">
+              Members
+            </span>
+
+            <strong>
+              1,250
+            </strong>
+
+          </div>
+
+          <div class="d-flex justify-content-between mb-3">
+
+            <span class="text-secondary">
+              Posts
+            </span>
+
+            <strong>
+              486
+            </strong>
+
+          </div>
+
+          <div class="d-flex justify-content-between">
+
+            <span class="text-secondary">
+              Professionals
+            </span>
+
+            <strong>
+              320
+            </strong>
+
+          </div>
+
+        </div>
+
+        <div class="glass-card p-4">
+
+          <h5 class="mb-3">
+            <i class="fa-solid fa-circle-info me-2"></i>
+            Community Guidelines
+          </h5>
+
+          <ul class="text-secondary ps-3">
+
+            <li class="mb-2">
+              Be respectful to other members.
+            </li>
+
+            <li class="mb-2">
+              Share useful and honest information.
+            </li>
+
+            <li class="mb-2">
+              Avoid spam and inappropriate content.
+            </li>
+
+            <li>
+              Help other users when you can.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

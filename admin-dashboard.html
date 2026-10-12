@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Admin Dashboard | FixAm Lagos</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="fa-solid fa-screwdriver-wrench me-2"></i>
+        FixAm Lagos
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#adminNavbar">
+
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div
+        class="collapse navbar-collapse"
+        id="adminNavbar">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <button
+              id="themeToggle"
+              class="btn btn-outline-info ms-lg-3">
+
+              <i class="fa-solid fa-sun"></i>
+
+            </button>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="py-5">
+
+    <div class="container">
+
+      <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+          Admin Dashboard
+        </h1>
+
+        <p class="text-secondary">
+          Manage FixAm Lagos jobs and users
+        </p>
+
+      </div>
+
+
+
+      <div class="row g-4 mb-5">
+
+        <div class="col-md-4">
+
+          <div class="glass-card text-center p-4">
+
+            <i class="fa-solid fa-clock fa-2x text-info mb-3"></i>
+
+            <h5>Pending Jobs</h5>
+
+            <h2 id="pendingJobCount">0</h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="glass-card text-center p-4">
+
+            <i class="fa-solid fa-check-circle fa-2x text-success mb-3"></i>
+
+            <h5>Approved Jobs</h5>
+
+            <h2 id="approvedJobCount">0</h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+          <div class="glass-card text-center p-4">
+
+            <i class="fa-solid fa-users fa-2x text-info mb-3"></i>
+
+            <h5>Registered Users</h5>
+
+            <h2 id="registeredUserCount">0</h2>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      
+      <div class="glass-card p-4">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+          <h3 class="mb-0">
+            <i class="fa-solid fa-briefcase me-2"></i>
+            Pending Job
+          </h3>
+
+          <span class="badge bg-warning text-dark">
+            Pending
+          </span>
+
+        </div>
+
+
+        <div id="pendingJobContainer">
+
+          <p class="text-secondary">
+            No pending jobs at the moment.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="text-center py-4">
+    <p class="mb-0 text-secondary">
+      © 2026 FixAm Lagos. Admin Dashboard.
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

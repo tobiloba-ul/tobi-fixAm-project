@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanics | FixAm Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+  <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        FixAm Lagos
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="find.html">
+              Find Professional
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="booking.html">
+              Booking
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">
+              Reviews
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">
+              Community
+            </a>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+
+            <button
+              type="button"
+              class="btn nav-icon"
+              id="themeToggle"
+              title="Toggle theme">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main style="margin-top: 100px;">
+
+    <div class="container py-5">
+
+
+      <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+          <i class="fa-solid fa-car me-2 text-info"></i>
+          Mechanics
+        </h1>
+
+        <p class="text-secondary">
+          Find trusted mechanics for your vehicle repairs and maintenance.
+        </p>
+
+      </div>
+
+      <div class="row justify-content-center mb-5">
+
+        <div class="col-lg-8">
+
+          <div class="glass-card p-4 mechanic-search-card">
+
+            <div class="row g-3">
+
+              <div class="col-md-8">
+
+                <label class="form-label">
+                  Search Mechanic
+                </label>
+
+                <div class="input-group">
+
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="mechanicSearch"
+                    placeholder="Search by name or service...">
+
+                </div>
+
+              </div>
+
+
+              <div class="col-md-4">
+
+                <label class="form-label">
+                  Location
+                </label>
+
+                <select
+                  class="form-select"
+                  id="mechanicLocation">
+
+                  <option value="">
+                    All Locations
+                  </option>
+
+                  <option value="Ikeja">
+                    Ikeja
+                  </option>
+
+                  <option value="Lekki">
+                    Lekki
+                  </option>
+
+                  <option value="Yaba">
+                    Yaba
+                  </option>
+
+                  <option value="Surulere">
+                    Surulere
+                  </option>
+
+                  <option value="Victoria Island">
+                    Victoria Island
+                  </option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div id="mechanicsList">
+
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-4 mechanic-item">
+
+            <div class="glass-card p-4 mechanic-card h-100">
+
+              <div class="mechanic-icon mb-3">
+
+                <i class="fa-solid fa-user-gear"></i>
+
+              </div>
+
+              <h4 class="fw-bold">
+                Emeka Auto Repairs
+              </h4>
+
+              <p class="text-info mb-2">
+                Professional Mechanic
+              </p>
+
+              <div class="text-warning mb-3">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <span class="text-secondary ms-2">
+                  4.9
+                </span>
+
+              </div>
+
+              <p class="text-secondary mb-2">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                Ikeja, Lagos
+              </p>
+
+              <p class="text-secondary mb-3">
+                <i class="fa-solid fa-briefcase me-2"></i>
+                8 years experience
+              </p>
+
+              <p>
+                Car diagnostics, engine repairs,
+                brake repairs and vehicle maintenance.
+              </p>
+
+              <div class="d-flex gap-2 mt-4">
+
+                <a
+                  href="profile.html"
+                  class="btn btn-outline-light btn-sm mechanic-btn flex-grow-1">
+                  View Profile
+                </a>
+
+                <a
+                  href="booking.html"
+                  class="btn btn-primary btn-sm mechanic-btn flex-grow-1">
+                  Book Service
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mechanic-item">
+
+            <div class="glass-card p-4 mechanic-card h-100">
+
+              <div class="mechanic-icon mb-3">
+
+                <i class="fa-solid fa-car-side"></i>
+
+              </div>
+
+              <h4 class="fw-bold">
+                Tunde Auto Care
+              </h4>
+
+              <p class="text-info mb-2">
+                Auto Repair Specialist
+              </p>
+
+              <div class="text-warning mb-3">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+                <span class="text-secondary ms-2">
+                  4.6
+                </span>
+
+              </div>
+
+              <p class="text-secondary mb-2">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                Lekki, Lagos
+              </p>
+
+              <p class="text-secondary mb-3">
+                <i class="fa-solid fa-briefcase me-2"></i>
+                6 years experience
+              </p>
+
+              <p>
+                Vehicle servicing, battery checks,
+                brake maintenance and diagnostics.
+              </p>
+
+              <div class="d-flex gap-2 mt-4">
+
+                <a
+                  href="profile.html"
+                  class="btn btn-outline-light btn-sm mechanic-btn flex-grow-1">
+                  View Profile
+                </a>
+
+                <a
+                  href="booking.html"
+                  class="btn btn-primary btn-sm mechanic-btn flex-grow-1">
+                  Book Service
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-4 mechanic-item">
+
+            <div class="glass-card p-4 mechanic-card h-100">
+
+              <div class="mechanic-icon mb-3">
+
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+              </div>
+
+              <h4 class="fw-bold">
+                Chinedu Motors
+              </h4>
+
+              <p class="text-info mb-2">
+                Vehicle Maintenance Expert
+              </p>
+
+              <div class="text-warning mb-3">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <span class="text-secondary ms-2">
+                  4.7
+                </span>
+
+              </div>
+
+              <p class="text-secondary mb-2">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                Yaba, Lagos
+              </p>
+
+              <p class="text-secondary mb-3">
+                <i class="fa-solid fa-briefcase me-2"></i>
+                7 years experience
+              </p>
+
+              <p>
+                Engine servicing, oil changes,
+                diagnostics and general vehicle repairs.
+              </p>
+
+              <div class="d-flex gap-2 mt-4">
+
+                <a
+                  href="profile.html"
+                  class="btn btn-outline-light btn-sm mechanic-btn flex-grow-1">
+                  View Profile
+                </a>
+
+                <a
+                  href="booking.html"
+                  class="btn btn-primary btn-sm mechanic-btn flex-grow-1">
+                  Book Service
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="col-md-6 col-lg-4 mechanic-item">
+
+            <div class="glass-card p-4 mechanic-card h-100">
+
+              <div class="mechanic-icon mb-3">
+
+                <i class="fa-solid fa-car-burst"></i>
+
+              </div>
+
+              <h4 class="fw-bold">
+                Adewale Auto Works
+              </h4>
+
+              <p class="text-info mb-2">
+                Car Repair Technician
+              </p>
+
+              <div class="text-warning mb-3">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <span class="text-secondary ms-2">
+                  4.8
+                </span>
+
+              </div>
+
+              <p class="text-secondary mb-2">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                Surulere, Lagos
+              </p>
+
+              <p class="text-secondary mb-3">
+                <i class="fa-solid fa-briefcase me-2"></i>
+                9 years experience
+              </p>
+
+              <p>
+                Accident repairs, engine repairs,
+                brake systems and vehicle inspection.
+              </p>
+
+              <div class="d-flex gap-2 mt-4">
+
+                <a
+                  href="profile.html"
+                  class="btn btn-outline-light btn-sm mechanic-btn flex-grow-1">
+                  View Profile
+                </a>
+
+                <a
+                  href="booking.html"
+                  class="btn btn-primary btn-sm mechanic-btn flex-grow-1">
+                  Book Service
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          
+          <div class="col-md-6 col-lg-4 mechanic-item">
+
+            <div class="glass-card p-4 mechanic-card h-100">
+
+              <div class="mechanic-icon mb-3">
+
+                <i class="fa-solid fa-wrench"></i>
+
+              </div>
+
+              <h4 class="fw-bold">
+                Femi Car Clinic
+              </h4>
+
+              <p class="text-info mb-2">
+                Automotive Technician
+              </p>
+
+              <div class="text-warning mb-3">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <span class="text-secondary ms-2">
+                  4.5
+                </span>
+
+              </div>
+
+              <p class="text-secondary mb-2">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                Victoria Island, Lagos
+              </p>
+
+              <p class="text-secondary mb-3">
+                <i class="fa-solid fa-briefcase me-2"></i>
+                5 years experience
+              </p>
+
+              <p>
+                Car servicing, electrical diagnostics,
+                battery replacement and repairs.
+              </p>
+
+              <div class="d-flex gap-2 mt-4">
+
+                <a
+                  href="profile.html"
+                  class="btn btn-outline-light btn-sm mechanic-btn flex-grow-1">
+                  View Profile
+                </a>
+
+                <a
+                  href="booking.html"
+                  class="btn btn-primary btn-sm mechanic-btn flex-grow-1">
+                  Book Service
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 mechanic-item">
+
+            <div class="glass-card p-4 mechanic-card h-100">
+
+              <div class="mechanic-icon mb-3">
+
+                <i class="fa-solid fa-gears"></i>
+
+              </div>
+
+              <h4 class="fw-bold">
+                Kunle Motors
+              </h4>
+
+              <p class="text-info mb-2">
+                Vehicle Repair Specialist
+              </p>
+
+              <div class="text-warning mb-3">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+
+                <span class="text-secondary ms-2">
+                  4.6
+                </span>
+
+              </div>
+
+              <p class="text-secondary mb-2">
+                <i class="fa-solid fa-location-dot me-2"></i>
+                Lekki, Lagos
+              </p>
+
+              <p class="text-secondary mb-3">
+                <i class="fa-solid fa-briefcase me-2"></i>
+                6 years experience
+              </p>
+
+              <p>
+                Engine diagnostics, transmission repairs,
+                servicing and vehicle maintenance.
+              </p>
+
+              <div class="d-flex gap-2 mt-4">
+
+                <a
+                  href="profile.html"
+                  class="btn btn-outline-light btn-sm mechanic-btn flex-grow-1">
+                  View Profile
+                </a>
+
+                <a
+                  href="booking.html"
+                  class="btn btn-primary btn-sm mechanic-btn flex-grow-1">
+                  Book Service
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div
+        id="mechanicNoResults"
+        class="text-center py-5"
+        style="display: none;">
+
+        <i class="fa-solid fa-car-crash fa-3x text-secondary mb-3"></i>
+
+        <h4>
+          No mechanics found
+        </h4>
+
+        <p class="text-secondary">
+          Try searching for another mechanic or location.
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews & Ratings | FixAm Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+
+  <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+
+    <div class="container">
+
+      <a class="navbar-brand fw-bold" href="index.html">
+        FixAm Lagos
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="find.html">
+              Find Professional
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="booking.html">
+              Booking
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="reviews.html">
+              Reviews
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">
+              Community
+            </a>
+          </li>
+
+          <li class="nav-item ms-lg-3">
+            <button
+              type="button"
+              class="btn nav-icon"
+              id="themeToggle"
+              title="Toggle theme">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <main style="margin-top: 100px;">
+
+    <div class="container py-5">
+
+      <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+          Reviews & Ratings
+        </h1>
+
+        <p class="text-secondary">
+          See what customers are saying about FixAm Lagos professionals.
+        </p>
+
+      </div>
+
+      <div class="row justify-content-center mb-5">
+
+        <div class="col-lg-8">
+
+          <div class="glass-card p-4 p-md-5 review-summary-card">
+
+            <div class="row align-items-center text-center">
+
+              <div class="col-md-5 mb-4 mb-md-0">
+
+                <h2 class="display-4 fw-bold mb-0">
+                  4.8
+                </h2>
+
+                <div class="text-warning fs-4 my-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+
+                <p class="text-secondary mb-0">
+                  Based on 24 reviews
+                </p>
+
+              </div>
+
+
+              <div class="col-md-7">
+
+                <div class="rating-row">
+                  <span>5 <i class="fa-solid fa-star text-warning"></i></span>
+
+                  <div class="progress flex-grow-1 mx-2">
+                    <div
+                      class="progress-bar"
+                      style="width: 85%;">
+                    </div>
+                  </div>
+
+                  <span>85%</span>
+                </div>
+
+
+                <div class="rating-row">
+                  <span>4 <i class="fa-solid fa-star text-warning"></i></span>
+
+                  <div class="progress flex-grow-1 mx-2">
+                    <div
+                      class="progress-bar"
+                      style="width: 10%;">
+                    </div>
+                  </div>
+
+                  <span>10%</span>
+                </div>
+
+
+                <div class="rating-row">
+                  <span>3 <i class="fa-solid fa-star text-warning"></i></span>
+
+                  <div class="progress flex-grow-1 mx-2">
+                    <div
+                      class="progress-bar"
+                      style="width: 3%;">
+                    </div>
+                  </div>
+
+                  <span>3%</span>
+                </div>
+
+
+                <div class="rating-row">
+                  <span>2 <i class="fa-solid fa-star text-warning"></i></span>
+
+                  <div class="progress flex-grow-1 mx-2">
+                    <div
+                      class="progress-bar"
+                      style="width: 1%;">
+                    </div>
+                  </div>
+
+                  <span>1%</span>
+                </div>
+
+
+                <div class="rating-row">
+                  <span>1 <i class="fa-solid fa-star text-warning"></i></span>
+
+                  <div class="progress flex-grow-1 mx-2">
+                    <div
+                      class="progress-bar"
+                      style="width: 1%;">
+                    </div>
+                  </div>
+
+                  <span>1%</span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="row justify-content-center mb-5">
+
+        <div class="col-lg-8">
+
+          <div class="glass-card p-4 p-md-5 review-form-card">
+
+            <h3 class="fw-bold mb-4">
+              <i class="fa-solid fa-pen-to-square me-2 text-info"></i>
+              Write a Review
+            </h3>
+
+            <form id="reviewForm">
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Your Name
+                </label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  id="reviewName"
+                  placeholder="Enter your name"
+                  required>
+
+              </div>
+
+
+              <div class="mb-3">
+
+                <label class="form-label">
+                  Rating
+                </label>
+
+                <select
+                  class="form-select"
+                  id="reviewRating"
+                  required>
+
+                  <option value="">
+                    Select Rating
+                  </option>
+
+                  <option value="5">
+                    5 Stars
+                  </option>
+
+                  <option value="4">
+                    4 Stars
+                  </option>
+
+                  <option value="3">
+                    3 Stars
+                  </option>
+
+                  <option value="2">
+                    2 Stars
+                  </option>
+
+                  <option value="1">
+                    1 Star
+                  </option>
+
+                </select>
+
+              </div>
+
+
+              <div class="mb-4">
+
+                <label class="form-label">
+                  Your Review
+                </label>
+
+                <textarea
+                  class="form-control"
+                  id="reviewText"
+                  rows="5"
+                  placeholder="Write your experience..."
+                  required></textarea>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="btn btn-primary review-btn">
+                <i class="fa-solid fa-paper-plane me-2"></i>
+                Submit Review
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mb-4">
+
+        <h3 class="fw-bold">
+          Customer Reviews
+        </h3>
+
+        <p class="text-secondary">
+          Recent feedback from FixAm Lagos users.
+        </p>
+
+      </div>
+
+
+      <div id="reviewsList">
+
+
+        <div class="glass-card p-4 mb-4 review-card">
+
+          <div class="d-flex align-items-center mb-3">
+
+            <div class="review-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="ms-3">
+
+              <h5 class="mb-1">
+                Amina Yusuf
+              </h5>
+
+              <div class="text-warning">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <p class="mb-2">
+            I found a reliable plumber through FixAm Lagos.
+            The service was quick and professional.
+          </p>
+
+          <small class="text-secondary">
+            Posted recently
+          </small>
+
+        </div>
+
+
+
+        <div class="glass-card p-4 mb-4 review-card">
+
+          <div class="d-flex align-items-center mb-3">
+
+            <div class="review-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="ms-3">
+
+              <h5 class="mb-1">
+                David Okafor
+              </h5>
+
+              <div class="text-warning">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <p class="mb-2">
+            The platform made it easy for me to find an
+            electrician around my location.
+          </p>
+
+          <small class="text-secondary">
+            Posted recently
+          </small>
+
+        </div>
+
+        <div class="glass-card p-4 mb-4 review-card">
+
+          <div class="d-flex align-items-center mb-3">
+
+            <div class="review-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="ms-3">
+
+              <h5 class="mb-1">
+                Chika Emmanuel
+              </h5>
+
+              <div class="text-warning">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <p class="mb-2">
+            I really like how simple FixAm Lagos is.
+            Booking a service was straightforward.
+          </p>
+
+          <small class="text-secondary">
+            Posted recently
+          </small>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

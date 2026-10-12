@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Post a Job | FixAm Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+
+  <nav class="navbar navbar-expand-lg site-navbar fixed-top">
+
+    <div class="container">
+
+      <a
+        class="navbar-brand fw-bold"
+        href="index.html">
+
+        <i class="fa-solid fa-screwdriver-wrench me-2"></i>
+
+        FixAm Lagos
+
+      </a>
+
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+
+        <i class="fa-solid fa-bars"></i>
+
+      </button>
+
+
+      <div
+        class="collapse navbar-collapse"
+        id="navbarNav">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="index.html">
+
+              Home
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="find.html">
+
+              Find a Professional
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="community.html">
+
+              Community
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="blog.html">
+
+              Blog
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="about.html">
+
+              About
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item">
+
+            <a
+              class="nav-link"
+              href="contact.html">
+
+              Contact
+
+            </a>
+
+          </li>
+
+
+          <li class="nav-item ms-lg-3">
+
+            <button
+              type="button"
+              class="btn btn-outline-light nav-icon"
+              id="themeToggle"
+              title="Toggle theme">
+
+              <i class="fa-solid fa-sun"></i>
+
+            </button>
+
+          </li>
+
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <main
+    class="container"
+    style="margin-top: 110px; margin-bottom: 60px;">
+
+
+    <div class="text-center mb-5">
+
+      <h1 class="fw-bold">
+        Post a Job
+      </h1>
+
+
+      <p class="text-secondary">
+
+        Tell us what service you need and find the right professional.
+
+      </p>
+
+    </div>
+
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-8">
+
+
+        <div class="glass-card p-4 p-md-5 postjob-card">
+
+
+          <form id="postJobForm">
+
+
+            <div class="mb-4">
+
+              <label
+                for="professionalName"
+                class="form-label fw-bold">
+
+                Full Name
+
+              </label>
+
+
+              <input
+                type="text"
+                class="form-control"
+                id="professionalName"
+                placeholder="Enter your full name"
+                required>
+
+            </div>
+
+            <div class="mb-4">
+
+              <label
+                for="jobTitle"
+                class="form-label fw-bold">
+
+                Job Title
+
+              </label>
+
+
+              <input
+                type="text"
+                class="form-control"
+                id="jobTitle"
+                placeholder="e.g. Kitchen Sink Repair"
+                required>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="jobCategory"
+                class="form-label fw-bold">
+
+                Service Category
+
+              </label>
+
+
+              <select
+                class="form-select"
+                id="jobCategory"
+                required>
+
+                <option
+                  value=""
+                  selected
+                  disabled>
+
+                  Select a category
+
+                </option>
+
+
+                <option value="Plumbing">
+
+                  Plumbing
+
+                </option>
+
+
+                <option value="Electrical">
+
+                  Electrical
+
+                </option>
+
+
+                <option value="Mechanics">
+
+                  Mechanics
+
+                </option>
+
+
+                <option value="Carpentry">
+                  Carpentry
+                </option>
+
+
+                <option value="Painting">
+                  Painting
+                </option>
+
+
+                <option value="Dry Cleaning">
+                  Dry Cleaning
+                </option>
+
+
+                <option value="Catering">
+                  Cooks / Caterers
+                </option>
+
+
+              </select>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="professionalOccupation"
+                class="form-label fw-bold">
+                Occupation
+              </label>
+
+
+              <input
+                type="text"
+                class="form-control"
+                id="professionalOccupation"
+                placeholder="e.g. Plumber, Electrician, Carpenter"
+                required>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="professionalWorkType"
+                class="form-label fw-bold">
+                Type of Work
+              </label>
+
+
+              <select
+                class="form-select"
+                id="professionalWorkType"
+                required>
+
+                <option
+                  value=""
+                  selected
+                  disabled>
+                  Select type of work
+                </option>
+
+
+                <option value="Full-time">
+                  Full-time
+                </option>
+
+
+                <option value="Part-time">
+                  Part-time
+                </option>
+
+
+                <option value="Contract">
+                  Contract
+                </option>
+
+
+                <option value="Temporary">
+                  Temporary
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="professionalGender"
+                class="form-label fw-bold">
+
+                Gender
+
+              </label>
+
+
+              <select
+                class="form-select"
+                id="professionalGender"
+                required>
+
+                <option
+                  value=""
+                  selected
+                  disabled>
+                  Select gender
+                </option>
+
+
+                <option value="Male">
+                  Male
+                </option>
+
+
+                <option value="Female">
+                  Female
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="jobDescription"
+                class="form-label fw-bold">
+                Describe the Job
+              </label>
+
+
+              <textarea
+                class="form-control"
+                id="jobDescription"
+                rows="5"
+                placeholder="Describe the problem or service you need..."
+                required></textarea>
+
+            </div>
+
+
+
+
+            <div class="mb-4">
+
+              <label
+                for="jobLocation"
+                class="form-label fw-bold">
+                Location
+              </label>
+
+
+              <select
+                class="form-select"
+                id="jobLocation"
+                required>
+
+                <option
+                  value=""
+                  selected
+                  disabled>
+                  Select your location
+                </option>
+
+
+                <option value="Ikeja">
+                  Ikeja
+                </option>
+
+
+                <option value="Lekki">
+                  Lekki
+                </option>
+
+
+                <option value="Yaba">
+                  Yaba
+                </option>
+
+                <option value="Victoria Island">
+                  Victoria Island
+                </option>
+
+
+                <option value="Surulere">
+                  Surulere
+                </option>
+
+
+                <option value="Ajah">
+                  Ajah
+                </option>
+
+
+                <option value="Lagos Island">
+                  Lagos Island
+                </option>
+
+
+              </select>
+
+            </div>
+
+
+
+            <div class="mb-4">
+
+              <label
+                for="professionalAddress"
+                class="form-label fw-bold">
+                Address
+              </label>
+
+
+              <input
+                type="text"
+                class="form-control"
+                id="professionalAddress"
+                placeholder="Enter your full address"
+                required>
+
+            </div>
+
+
+            <div class="row g-3 mb-4">
+
+              <div class="col-md-6">
+
+                <label
+                  for="jobDate"
+                  class="form-label fw-bold">
+
+                  Preferred Date
+
+                </label>
+
+                <input
+                  type="date"
+                  class="form-control"
+                  id="jobDate"
+                  required>
+
+              </div>
+
+
+              <div class="col-md-6">
+
+                <label
+                  for="jobTime"
+                  class="form-label fw-bold">
+                  Resumption / Start Time
+                </label>
+
+
+                <input
+                  type="time"
+                  class="form-control"
+                  id="jobTime"
+                  required>
+
+              </div>
+
+
+            </div>
+
+            <div class="mb-4">
+
+              <label
+                for="jobBudget"
+                class="form-label fw-bold">
+
+                Estimated Budget (₦)
+
+              </label>
+
+
+              <input
+                type="number"
+                class="form-control"
+                id="jobBudget"
+                placeholder="e.g. 25000"
+                min="0"
+                required>
+
+            </div>
+
+
+            <div class="mb-4">
+
+              <label
+                for="additionalInfo"
+                class="form-label fw-bold">
+                Additional Information
+                <span class="text-secondary">
+                  (Optional)
+                </span>
+
+              </label>
+
+              <textarea
+                class="form-control"
+                id="additionalInfo"
+                rows="3"
+                placeholder="Add any other information..."></textarea>
+            </div>
+
+
+            <div class="form-check mb-4">
+
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="jobAgreement"
+                required>
+
+              <label
+                class="form-check-label text-secondary"
+                for="jobAgreement">
+                I confirm that the information provided is correct.
+              </label>
+
+            </div>
+
+
+            <div class="d-grid">
+
+              <button
+                type="submit"
+                class="btn btn-primary postjob-btn">
+
+                <i class="fa-solid fa-paper-plane me-2"></i>
+                Post Job
+              </button>
+
+            </div>
+
+          </form>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="row g-4 mt-4">
+
+
+      <div class="col-md-4">
+
+        <div
+          class="glass-card p-4 text-center postjob-info-card">
+
+          <i
+            class="fa-solid fa-user-check fa-2x text-info mb-3">
+          </i>
+
+
+          <h5>
+            Find Professionals
+          </h5>
+
+          <p class="text-secondary mb-0">
+            Connect with trusted service professionals in your area.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-4">
+
+        <div
+          class="glass-card p-4 text-center postjob-info-card">
+          <i
+            class="fa-solid fa-location-dot fa-2x text-info mb-3">
+          </i>
+
+          <h5>
+            Local Services
+          </h5>
+
+          <p class="text-secondary mb-0">
+            Find professionals available around your location.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="col-md-4">
+
+        <div
+          class="glass-card p-4 text-center postjob-info-card">
+
+          <i
+            class="fa-solid fa-shield-halved fa-2x text-info mb-3">
+          </i>
+
+          <h5>
+            Safer Connections
+          </h5>
+
+          <p class="text-secondary mb-0">
+            Make informed decisions when choosing a professional.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | FixAm Lagos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+
+        <i class="fa-solid fa-screwdriver-wrench brand-icon"></i>
+
+        <span>
+          <strong>FixAm Lagos</strong>
+          <small class="d-block">
+            Find Trusted Professionals Across Lagos.
+          </small>
+        </span>
+
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="find.html">
+              Find a Professional
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#services">
+              Services
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="community.html">
+              Community
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">
+              Blog
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 ms-lg-3 mt-3 mt-lg-0">
+
+          <a class="nav-icon" href="dashboard-client.html">
+            <i class="fa-solid fa-bell"></i>
+          </a>
+
+          <a class="btn btn-outline-light btn-sm px-3" href="login.html">
+            Login
+          </a>
+
+          <a class="btn btn-primary btn-sm px-3" href="register-pro.html">
+            Register
+          </a>
+
+          <button
+            id="themeToggle"
+            class="nav-icon border-0 bg-transparent"
+            type="button">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="container py-5" style="margin-top: 80px;">
+
+    <div class="text-center mb-5">
+
+      <h1 class="fw-bold">
+        FixAm Lagos Blog
+      </h1>
+
+      <p class="text-secondary">
+        Helpful tips and advice for maintaining your home and finding trusted professionals.
+      </p>
+
+    </div>
+
+
+    <div class="search-box p-3 mb-5 mx-auto">
+
+      <form class="row g-2">
+
+        <div class="col-md-9">
+
+          <div class="input-group">
+
+            <span class="input-group-text">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+
+            <input
+              type="search"
+              class="form-control"
+              id="blogSearch"
+              placeholder="Search articles...">
+
+          </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <button
+            type="submit"
+            class="btn btn-primary w-100">
+            <i class="fa-solid fa-search me-2"></i>
+            Search
+          </button>
+
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="row g-4" id="blogArticles">
+
+      <div class="col-md-6 col-lg-4 blog-card">
+
+        <div class="glass-card h-100 overflow-hidden">
+
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="height: 180px; background: var(--cyan);">
+            <i
+              class="fa-solid fa-faucet-drip text-dark"
+              style="font-size: 60px;"></i>
+          </div>
+
+          <div class="p-4">
+
+            <span class="badge bg-info text-dark mb-2">
+              Plumbing
+            </span>
+
+            <h4>
+              How to Prevent Plumbing Problems
+            </h4>
+
+            <p class="text-secondary">
+              Learn simple ways to reduce leaks, blocked pipes and other common plumbing problems.
+            </p>
+
+            <a href="#" class="btn btn-primary btn-sm">
+              Read More
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-card">
+
+        <div class="glass-card h-100 overflow-hidden">
+
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="
+              height: 180px;
+              background: var(--cyan);">
+            <i
+              class="fa-solid fa-bolt text-dark"
+              style="font-size: 60px;"></i>
+          </div>
+
+          <div class="p-4">
+
+            <span class="badge bg-info text-dark mb-2">
+              Electrical
+            </span>
+
+            <h4>
+              Basic Electrical Safety Tips
+            </h4>
+
+            <p class="text-secondary">
+              Important safety practices that can help you avoid common electrical problems at home.
+            </p>
+
+            <a href="#" class="btn btn-primary btn-sm">
+              Read More
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-card">
+
+        <div class="glass-card h-100 overflow-hidden">
+
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="
+              height: 180px;
+              background: var(--cyan);">
+            <i
+              class="fa-solid fa-screwdriver-wrench text-dark"
+              style="font-size: 60px;"></i>
+          </div>
+
+          <div class="p-4">
+
+            <span class="badge bg-info text-dark mb-2">
+              Maintenance
+            </span>
+
+            <h4>
+              Why Regular Home Maintenance Matters
+            </h4>
+
+            <p class="text-secondary">
+              Regular maintenance can help identify small problems before they become bigger repairs.
+            </p>
+
+            <a href="#" class="btn btn-primary btn-sm">
+              Read More
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-card">
+
+        <div class="glass-card h-100 overflow-hidden">
+
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="
+              height: 180px;
+              background: var(--cyan); ">
+            <i
+              class="fa-solid fa-snowflake text-dark"
+              style="font-size: 60px;"></i>
+          </div>
+
+          <div class="p-4">
+
+            <span class="badge bg-info text-dark mb-2">
+              AC & Cooling
+            </span>
+
+            <h4>
+              Tips for Maintaining Your AC
+            </h4>
+
+            <p class="text-secondary">
+              Simple maintenance practices that can help keep your air conditioner working properly.
+            </p>
+
+            <a href="#" class="btn btn-primary btn-sm">
+              Read More
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-card">
+
+        <div class="glass-card h-100 overflow-hidden">
+
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="
+              height: 180px;
+              background: var(--cyan);">
+            <i
+              class="fa-solid fa-house text-dark"
+              style="font-size: 60px;"></i>
+          </div>
+
+          <div class="p-4">
+
+            <span class="badge bg-info text-dark mb-2">
+              Home Care
+            </span>
+
+            <h4>
+              Keeping Your Home in Good Condition
+            </h4>
+
+            <p class="text-secondary">
+              Discover useful habits that can help you keep your home comfortable and well maintained.
+            </p>
+
+            <a href="#" class="btn btn-primary btn-sm">
+              Read More
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6 col-lg-4 blog-card">
+
+        <div class="glass-card h-100 overflow-hidden">
+
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="
+              height: 180px;
+              background: var(--cyan);">
+            <i
+              class="fa-solid fa-user-check text-dark"
+              style="font-size: 60px;"></i>
+          </div>
+
+          <div class="p-4">
+
+            <span class="badge bg-info text-dark mb-2">
+              Professionals
+            </span>
+
+            <h4>
+              How to Choose a Trusted Professional
+            </h4>
+
+            <p class="text-secondary">
+              Learn what to consider when selecting a professional for your home repair needs.
+            </p>
+
+            <a href="#" class="btn btn-primary btn-sm">
+              Read More
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
